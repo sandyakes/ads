@@ -1,0 +1,92 @@
+<h5>Discover the Power of Mushrooms: From Therapeutic to Psychedelic</h5>
+<h6>Introduction</h6>
+
+<details>
+<h6>Amanita Muscaria: The Iconic and Enigmatic Fungus</h6>
+<summary><span id="open">Read More</span>
+<span id="close">Read Less</span></summary></details>
+
+
+details {
+    display: inline;
+    position: relative
+}
+
+details summary {
+    display: block;
+    cursor: pointer;
+    color: red;
+    margin-top: 10px
+}
+
+details summary:focus {
+    outline: none
+}
+
+details[open] {
+    display: block;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    animation: open .2s linear
+}
+
+details[open] summary {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+details {
+    display: block!important
+}
+
+details #open {
+    text-align: middle;
+    display: inline-block
+}
+
+details #open:after {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    padding-left: 8px;
+    content: "\00bb";
+    transform: rotate(90deg)
+}
+
+details #close:after {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    padding-left: 8px;
+    content: "\00bb";
+    transform: rotate(-90deg)
+}
+
+details[open] #open {
+    display: none
+}
+
+details #close {
+    display: none
+}
+
+details[open] #close {
+    display: inline-block;
+    position: relative;
+    top: 20px
+}
+
+details summary span {
+    color: #FFFFFF!important;
+    border-width: 0px!important;
+    border-radius: 0px;
+    font-size: 16px;
+    text-transform: uppercase!important;
+    background-color: #0FA725;
+    padding: 5px 15px
+}
+
+::-webkit-details-marker {
+    display: none
+}
